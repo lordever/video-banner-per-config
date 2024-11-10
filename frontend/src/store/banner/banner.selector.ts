@@ -1,4 +1,4 @@
 import {RootState} from "../store";
 
-export const selectBannerConfig = (state: RootState) => state.bannerConfig.config
+export const selectBannerConfigList = (state: RootState) => state.bannerConfig.configList
 

@@ -1,16 +1,15 @@
 export interface BannerConfigModel {
-    animatedTitle: AnimatedTextModel;
-    animatedSubTitle: AnimatedTextModel;
-    video: VideoModel;
-    mobileVideo: VideoModel;
+    title: string;
+    subTitle: string;
+    animatedTitle?: AnimatedTextModel;
+    animatedSubTitle?: AnimatedTextModel;
+    video?: string;
+    mobileVideo?: string;
+    background: string;
+    mobileBackground: string;
 }
 
 export interface AnimatedTextModel {
     text: string;
-    delay: number;
-}
-
-interface VideoModel {
-    link: string;
     delay: number;
 }
