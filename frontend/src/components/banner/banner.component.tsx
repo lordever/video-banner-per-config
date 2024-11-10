@@ -31,7 +31,7 @@ const Banner: FC<BannerConfig> = ({
 
     const renderTitle = useMemo(() => {
         if (animatedTitle) {
-            return <h2 className="title" style={{animationDelay: `${animatedTitle.delay}ms`}}>{animatedTitle.text}</h2>
+            return <h2 className="title-animated" style={{animationDelay: `${animatedTitle.delay}ms`}}>{animatedTitle.text}</h2>
         }
 
         return <h2 className="title">{title}</h2>
@@ -39,7 +39,7 @@ const Banner: FC<BannerConfig> = ({
 
     const renderSubTitle = useMemo(() => {
         if (animatedSubTitle) {
-            return <p className="subtitle"
+            return <p className="subtitle-animated"
                       style={{animationDelay: `${animatedSubTitle.delay}ms`}}>{animatedSubTitle.text}</p>
         }
 

@@ -31,7 +31,7 @@
     max-width: 80%;
 }
 
-.title, .subtitle {
+.title-animated, .subtitle-animated {
     opacity: 0;
     transform: translateX(-50%);
     animation: slideOut 1s forwards ease-out;
