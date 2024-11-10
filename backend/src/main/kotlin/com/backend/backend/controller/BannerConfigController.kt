@@ -16,23 +16,23 @@ class BannerConfigController {
     @GetMapping(CONFIG_PATH)
     fun getConfig(): ResponseEntity<BannerConfigDTO> {
         val title = AnimatedTextDTO(
-            text = "Title",
-            delay = 600
+            text = "Funktioner",
+            delay = 300
         )
 
         val subTitle = AnimatedTextDTO(
-            text = "Sub Title",
-            delay = 300
-        )
-
-        val video = VideoDTO(
-            link = "http://localhost:8080/video/video",
+            text = "Vores platform tilbyder avancerede værktøjer til at forbedre din oplevelse.",
             delay = 600
         )
 
-        val mobileVideo = VideoDTO(
-            link = "http://localhost:8080/video/mobile-video",
+        val video = VideoDTO(
+            link = "http://localhost:8080/api/v1/video",
             delay = 300
+        )
+
+        val mobileVideo = VideoDTO(
+            link = "http://localhost:8080/api/v1/mobile-video",
+            delay = 600
         )
 
         val config = BannerConfigDTO(

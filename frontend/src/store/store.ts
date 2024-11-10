@@ -1,9 +1,11 @@
 import {configureStore} from "@reduxjs/toolkit";
 import testReducer from "./test/test.slice"
+import bannerConfigReducer from "./banner/banner.slice"
 
 export const store = configureStore({
     reducer: {
-        test: testReducer
+        test: testReducer,
+        bannerConfig: bannerConfigReducer
     },
 })
 
